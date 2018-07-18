@@ -3,9 +3,10 @@ package main
 import (
 	"net/http"
 
-	yaag_gin "github.com/betacraft/yaag/gin"
-	"github.com/betacraft/yaag/yaag"
 	"github.com/gin-gonic/gin"
+
+	yaag_gin "github.com/sniperkit/yaag/gin"
+	"github.com/sniperkit/yaag/yaag"
 )
 
 func main() {

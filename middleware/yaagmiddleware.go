@@ -14,8 +14,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/betacraft/yaag/yaag"
-	"github.com/betacraft/yaag/yaag/models"
+	"github.com/sniperkit/yaag/yaag"
+	"github.com/sniperkit/yaag/yaag/models"
 )
 
 /* 32 MB in memory max */
@@ -197,7 +197,7 @@ func ReadBody(req *http.Request) *string {
 }
 
 func After(apiCall *models.ApiCall, record *responseRecorder, r *http.Request) {
-	if strings.Contains(r.RequestURI, ".ico") || !yaag.IsOn(){
+	if strings.Contains(r.RequestURI, ".ico") || !yaag.IsOn() {
 		return
 	}
 	apiCall.MethodType = r.Method

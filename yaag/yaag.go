@@ -11,7 +11,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/betacraft/yaag/yaag/models"
+	"github.com/sniperkit/yaag/yaag/models"
 )
 
 var count int
@@ -30,7 +30,6 @@ func Init(conf *Config) {
 	if conf.DocPath == "" {
 		conf.DocPath = "apidoc.html"
 	}
-
 
 	filePath, err := filepath.Abs(conf.DocPath + ".json")
 	dataFile, err := os.Open(filePath)
@@ -136,7 +135,7 @@ func deleteCommonHeaders(call *models.ApiCall) {
 	delete(call.RequestHeader, "User-Agent")
 }
 
-func IsStatusCodeValid(code int) bool  {
+func IsStatusCodeValid(code int) bool {
 	if code >= 200 && code < 300 {
 		return true
 	} else {

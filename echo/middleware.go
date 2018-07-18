@@ -1,10 +1,10 @@
 package middleware
 
 import (
-	"github.com/betacraft/yaag/middleware"
-	"github.com/betacraft/yaag/yaag"
-	"github.com/betacraft/yaag/yaag/models"
 	"github.com/labstack/echo"
+	"github.com/sniperkit/yaag/middleware"
+	"github.com/sniperkit/yaag/yaag"
+	"github.com/sniperkit/yaag/yaag/models"
 )
 
 func Yaag() echo.MiddlewareFunc {

@@ -1,11 +1,13 @@
 package martiniyaag
 
 import (
-	"github.com/betacraft/yaag/middleware"
-	"github.com/betacraft/yaag/yaag"
-	"github.com/betacraft/yaag/yaag/models"
-	"github.com/go-martini/martini"
 	"net/http"
+
+	"github.com/go-martini/martini"
+
+	"github.com/sniperkit/yaag/middleware"
+	"github.com/sniperkit/yaag/yaag"
+	"github.com/sniperkit/yaag/yaag/models"
 )
 
 func Document(c martini.Context, w http.ResponseWriter, r *http.Request) {
@@ -18,5 +20,5 @@ func Document(c martini.Context, w http.ResponseWriter, r *http.Request) {
 	c.MapTo(writer, (*http.ResponseWriter)(nil))
 	middleware.Before(&apiCall, r)
 	c.Next()
-	middleware.After(&apiCall, writer,  r)
+	middleware.After(&apiCall, writer, r)
 }

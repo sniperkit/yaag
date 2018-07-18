@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/betacraft/yaag/martiniyaag"
-	"github.com/betacraft/yaag/yaag"
 	"github.com/go-martini/martini"
+
+	"github.com/sniperkit/yaag/martiniyaag"
+	"github.com/sniperkit/yaag/yaag"
 )
 
 func main() {

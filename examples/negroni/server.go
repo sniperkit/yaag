@@ -1,12 +1,14 @@
 package main
 
 import (
-	"github.com/betacraft/yaag/yaag"
-	"github.com/gorilla/mux"
-	"net/http"
-	"github.com/betacraft/yaag/middleware"
 	"fmt"
+	"net/http"
 	"time"
+
+	"github.com/sniperkit/yaag/middleware"
+	"github.com/sniperkit/yaag/yaag"
+
+	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 )
 

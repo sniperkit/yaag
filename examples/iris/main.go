@@ -2,11 +2,11 @@
 package main
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/context"
+	"github.com/sniperkit/iris"
+	"github.com/sniperkit/iris/context"
 
-	"github.com/betacraft/yaag/yaag"
-	"github.com/betacraft/yaag/irisyaag"
+	"github.com/sniperkit/yaag/irisyaag"
+	"github.com/sniperkit/yaag/yaag"
 )
 
 type myXML struct {

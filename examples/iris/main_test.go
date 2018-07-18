@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kataras/iris/httptest"
+	"github.com/sniperkit/iris/httptest"
 )
 
 func TestIrisYaag(t *testing.T) {
